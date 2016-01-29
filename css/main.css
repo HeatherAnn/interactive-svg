@@ -56,6 +56,20 @@ html {
   100% { transform: translate(10px, 0px); }
 }
 
-#left-ear:hover {
-  transform: translate(0px,10px);
+#left-ear {
+  transform: translate(0px,0px);
+  transition: all 1s linear;
+}
+
+#right-ear {
+  transform: translate(0px,0px);
+  transition: all 1s linear;
+}
+
+#bear:hover #left-ear{
+    transform: translate(0px,-10px);
+}
+
+#bear:hover #right-ear{
+    transform: translate(0px,-10px);
 }
