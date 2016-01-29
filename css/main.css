@@ -15,3 +15,47 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+.cls-1 {
+  fill:#673200;
+}
+
+.cls-2 {
+  fill:#ffaaca;
+}
+
+.cls-3 {
+  fill:#c65b00;
+}
+
+.cls-4 {
+  fill:none;
+  stroke:#000;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:3px;
+}
+
+#left-eye {
+  transform-origin: center;
+  animation: slide 1s infinite alternate;
+}
+
+@keyframes slide {
+  0% { transform: translate(0px); }
+  100% { transform: translate(10px, 0px); }
+}
+
+#right-eye {
+  transform-origin: center;
+  animation: slide 1s infinite alternate;
+}
+
+@keyframes slide {
+  0% { transform: translate(0px); }
+  100% { transform: translate(10px, 0px); }
+}
+
+#left-ear:hover {
+  transform: translate(0px,10px);
+}
